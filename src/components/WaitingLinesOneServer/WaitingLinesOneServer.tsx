@@ -167,7 +167,7 @@ export const WaitingLinesOneServer: FC = () => {
                     </TableHead>
                     <TableBody>
                       {result.probabilities.map((row, index) => (
-                        <TableRow key={`row-probability-${index}`}>
+                        <TableRow key={`waiting-lines-one-server-row-probability-${index}`}>
                           <TableCell>{round(row.n)}</TableCell>
                           <TableCell>{round(row.pn)}</TableCell>
                           <TableCell>{round(row.fn)}</TableCell>

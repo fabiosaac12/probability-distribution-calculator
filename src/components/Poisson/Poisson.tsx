@@ -74,6 +74,7 @@ export const Poisson: FC = () => {
                 >
                   {Object.keys(CalculateTypes).map((type) => (
                     <FormControlLabel
+                      key={`poisson-calculate-${type}`}
                       value={type}
                       control={<Radio />}
                       label={calculateTypeLabels[type] as unknown as any}

@@ -9,13 +9,12 @@ import { Poisson } from "./components/Poisson";
 import { Exponential } from "./components/Exponential";
 import { WaitingLinesOneServer } from "./components/WaitingLinesOneServer";
 import { WaitingLinesMultipleServer } from "./components/WaitingLinesMultipleServer";
-import { Header } from "./components/Header";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import "./index.css";
-import { Container, createTheme } from "@mui/material";
+import { createTheme } from "@mui/material";
 import { ThemeProvider } from "@mui/styles";
 
 const router = createBrowserRouter([

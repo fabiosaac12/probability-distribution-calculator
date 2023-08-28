@@ -74,6 +74,7 @@ export const Exponential: FC = () => {
                 >
                   {Object.keys(CalculateTypes).map((type) => (
                     <FormControlLabel
+                      key={`exponential-calculate-${type}`}
                       value={type}
                       control={<Radio />}
                       label={calculateTypeLabels[type] as unknown as any}
