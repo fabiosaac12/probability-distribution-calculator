@@ -1,19 +1,56 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Navigate,
+} from "react-router-dom";
+import { Poisson } from "./components/Poisson";
+import { Exponential } from "./components/Exponential";
+import { WaitingLinesOneServer } from "./components/WaitingLinesOneServer";
+import { WaitingLinesMultipleServer } from "./components/WaitingLinesMultipleServer";
+import { Header } from "./components/Header";
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+import "./index.css";
+import { Container, createTheme } from "@mui/material";
+import { ThemeProvider } from "@mui/styles";
+
+const router = createBrowserRouter([
+  {
+    path: "/poisson",
+    element: <Poisson />,
+  },
+  {
+    path: "/exponential",
+    element: <Exponential />,
+  },
+  {
+    path: "/waiting-lines-one-server",
+    element: <WaitingLinesOneServer />,
+  },
+  {
+    path: "/waiting-lines-multiple-server",
+    element: <WaitingLinesMultipleServer />,
+  },
+  {
+    path: "*",
+    element: <Navigate to="/poisson" />,
+  },
+]);
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  document.getElementById("root") as HTMLElement
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const theme = createTheme();
+
+root.render(
+  <React.StrictMode>
+    <ThemeProvider theme={theme}>
+      <RouterProvider router={router} />
+    </ThemeProvider>
+  </React.StrictMode>
+);
