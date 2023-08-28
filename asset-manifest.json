@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/probability-distribution-calculator/static/css/main.e30aed77.css",
-    "main.js": "/probability-distribution-calculator/static/js/main.18fe28a0.js",
+    "main.js": "/probability-distribution-calculator/static/js/main.8279ff55.js",
     "static/media/roboto-latin-500-normal.woff2": "/probability-distribution-calculator/static/media/roboto-latin-500-normal.f25d774ecfe0996f8eb5.woff2",
     "static/media/roboto-latin-700-normal.woff2": "/probability-distribution-calculator/static/media/roboto-latin-700-normal.227c93190fe7f82de3f8.woff2",
     "static/media/roboto-latin-400-normal.woff2": "/probability-distribution-calculator/static/media/roboto-latin-400-normal.b009a76ad6afe4ebd301.woff2",
@@ -60,10 +60,10 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/probability-distribution-calculator/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/probability-distribution-calculator/index.html",
     "main.e30aed77.css.map": "/probability-distribution-calculator/static/css/main.e30aed77.css.map",
-    "main.18fe28a0.js.map": "/probability-distribution-calculator/static/js/main.18fe28a0.js.map"
+    "main.8279ff55.js.map": "/probability-distribution-calculator/static/js/main.8279ff55.js.map"
   },
   "entrypoints": [
     "static/css/main.e30aed77.css",
-    "static/js/main.18fe28a0.js"
+    "static/js/main.8279ff55.js"
   ]
 }
